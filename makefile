@@ -12,7 +12,7 @@ clean:
 bin: ${OBJ}
 
 bin/%: src/%.c
-	mkdir bin
+	mkdir -p bin
 	${CC} -o $@ $^ ${CFLAGS}
 
 .PHONY: all clean
