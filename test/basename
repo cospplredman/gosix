@@ -6,7 +6,11 @@ SUCCESS=0
 
 eq(){
 	TESTS=$((${TESTS} + 1))
-	test $1 = $2 && SUCCESS=$((${SUCCESS} + 1))
+	if test $1 = $2; then
+	       	SUCCESS=$((${SUCCESS} + 1))
+	else 
+		echo "!!!: $1 != $2"
+	fi
 }
 
 eq $(${BIN} "//test") "test"
