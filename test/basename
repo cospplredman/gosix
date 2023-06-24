@@ -1,0 +1,20 @@
+#!/bin/bash
+
+BIN=./bin/basename
+TESTS=0
+SUCCESS=0
+
+eq(){
+	TESTS=$((${TESTS} + 1))
+	test $1 = $2 && SUCCESS=$((${SUCCESS} + 1))
+}
+
+eq $(${BIN} "//test") "test"
+eq $(${BIN} "////") "/"
+eq $(${BIN} "") ""
+eq $(${BIN} "//test/kekw") "kekw"
+eq $(${BIN} "//test/kekw//") "kekw"
+eq $(${BIN} "//test/kekw.mp3//" ".mp3") "kekw"
+
+echo $(basename $0)":" ${SUCCESS} "/" ${TESTS}
+
