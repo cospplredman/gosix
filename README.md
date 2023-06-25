@@ -36,8 +36,10 @@ doable:
 - more
 - nl
 - chrontab
+- cmp
 
 technically doable:
+- comm
 - c99
 - fort77
 - awk
