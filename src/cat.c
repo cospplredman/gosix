@@ -9,6 +9,6 @@ FILE*f;i,d;main(c,v)char**v;{
 		for(;(d=getc(f))>=0;)
 			if(putchar(d)<0)
 				exit(1);
-		if(f!=stdin&&fclose(f)<0)exit(1);
+		if(f-stdin&&fclose(f)<0)exit(1);
 	}
 }
