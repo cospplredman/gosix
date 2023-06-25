@@ -24,12 +24,8 @@ make clean
 # TODO
 listed below is a (incomplete) list of posix utilities that you can write with the given restrictions that have yet to be implemented.
 
-doable:
+## doable:
 - cksum
-- cp
-- mv
-- mkdir
-- rm
 - head
 - tail
 - cal
@@ -38,20 +34,24 @@ doable:
 - chrontab
 - cmp
 
-technically doable:
+## technically doable:
 - comm
 - c99
 - fort77
 - awk
 - vi
-- grep
 - printf
-- find
 - diff
 - patch
 - lex
 - sh
 - sed
+
+## mostly doable (some flags not supported):
+- rm (-r flag is impossible)
+- grep (-r flag is impossible)
+- cp (-r flag is impossible)
+- mv (-r flag and can't make/move directories)
 
 # posix standard
 https://www.open-std.org/jtc1/sc22/open/n4217.pdf
