@@ -5,13 +5,10 @@ FILE*f;i,d;main(c,v)char**v;{
 	for(;++i<c;){
 		f=strcmp(v[i],"-")?fopen(v[i],"r"):stdin;
 		if(!f)exit(1);
-		while((d=getc(f))>=0)
-			if(putc(d,stdout)<0)
+		rewind(f);
+		for(;(d=getc(f))>=0;)
+			if(putchar(d)<0)
 				exit(1);
-		if(f==stdin)
-			rewind(f);
-		else
-			if(fclose(f)<0)exit(1);
+		if(f!=stdin&&fclose(f)<0)exit(1);
 	}
-	exit(0);
 }
