@@ -36,7 +36,6 @@ doable:
 - more
 - nl
 - chrontab
-- cat
 
 technically doable:
 - c99
