@@ -11,7 +11,7 @@ make
 
 to build a specific utility run
 ```
-make src/[utility]
+make bin/[utility]
 ```
 
 the compiled utilities will be in the generated `./bin` directory
@@ -36,9 +36,10 @@ doable:
 - more
 - nl
 - chrontab
-- cat
+- cmp
 
 technically doable:
+- comm
 - c99
 - fort77
 - awk
