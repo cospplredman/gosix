@@ -23,15 +23,14 @@ make clean
 ```
 
 # TODO
-listed below is a (incomplete) list of posix utilities that you can write with the given restrictions, that have yet to be implemented.
+listed below is a (incomplete) list of posix utilities that you can write with the given restrictions that have yet to be implemented.
 
-list of doable posix utilities:
+doable:
 - cksum
 - cp
 - mv
 - mkdir
 - rm
-- sed
 - head
 - tail
 - cal
@@ -52,6 +51,7 @@ technically doable:
 - patch
 - lex
 - sh
+- sed
 
 # posix standard
 https://www.open-std.org/jtc1/sc22/open/n4217.pdf
