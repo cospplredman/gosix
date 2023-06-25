@@ -1,7 +1,56 @@
 # gosix
-golfed posix (utilities)
+code in this repo is golfed c99 using only the c standard library **with no specific platform/target**
 
-utility sources are under the src directory
+utility sources are in the `src` directory, and testing scripts are in the `test` directory
 
-code in this repo is golfed c99 with the c standard library
+# Building
+to build all utilities run
+```
+make
+```
 
+to build a specific utility run
+```
+make src/[utility]
+```
+
+the compiled utilities will be in the generated `./bin` directory
+
+to `clean` old builds run
+```
+make clean
+```
+
+# TODO
+listed below is a (incomplete) list of posix utilities that you can write with the given restrictions that have yet to be implemented.
+
+doable:
+- cksum
+- cp
+- mv
+- mkdir
+- rm
+- head
+- tail
+- cal
+- more
+- nl
+- chrontab
+- cat
+
+technically doable:
+- c99
+- fort77
+- awk
+- vi
+- grep
+- printf
+- find
+- diff
+- patch
+- lex
+- sh
+- sed
+
+# posix standard
+https://www.open-std.org/jtc1/sc22/open/n4217.pdf
