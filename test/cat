@@ -1,0 +1,22 @@
+#!/bin/bash
+
+BIN=./bin/cat
+TESTS=0
+SUCCESS=0
+
+eq(){
+	TESTS=$((${TESTS} + 1))
+	if test $1 = $2; then
+	       	SUCCESS=$((${SUCCESS} + 1))
+	else 
+		echo "!!!: $1 != $2"
+	fi
+}
+
+
+eq $(echo "lmao" | cat) "lmao"
+eq $(echo "lmao" | cat -u -) "lmao"
+eq $(echo "lmao" | cat -) "lmao"
+eq $(cat <(echo -n "a") <(echo -n "b")) "ab"
+
+echo $(basename $0)":" ${SUCCESS} "/" ${TESTS}
