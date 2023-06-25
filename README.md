@@ -1,5 +1,4 @@
 # gosix
-golfed posix (utilities)
 code in this repo is golfed c99 using only the c standard library **with no specific platform/target**
 
 utility sources are in the `src` directory, and testing scripts are in the `test` directory
