@@ -14,9 +14,9 @@ eq(){
 }
 
 
-eq $(echo "lmao" | cat) "lmao"
-eq $(echo "lmao" | cat -u -) "lmao"
-eq $(echo "lmao" | cat -) "lmao"
-eq $(cat <(echo -n "a") <(echo -n "b")) "ab"
+eq $(echo "lmao" | ${BIN}) "lmao"
+eq $(echo "lmao" | ${BIN} -u -) "lmao"
+eq $(echo "lmao" | ${BIN} -) "lmao"
+eq $(${BIN} <(echo -n "a") <(echo -n "b")) "ab"
 
 echo $(basename $0)":" ${SUCCESS} "/" ${TESTS}
