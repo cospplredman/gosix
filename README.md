@@ -11,7 +11,7 @@ make
 
 to build a specific utility run
 ```
-make src/[utility]
+make bin/[utility]
 ```
 
 the compiled utilities will be in the generated `./bin` directory
