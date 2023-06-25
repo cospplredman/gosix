@@ -8,7 +8,10 @@ FILE*f;i,d;main(c,v)char**v;{
 		while((d=getc(f))>=0)
 			if(putc(d,stdout)<0)
 				exit(1);
-		if(fclose(f)<0)exit(1);
+		if(f==stdin)
+			rewind(f);
+		else
+			if(fclose(f)<0)exit(1);
 	}
 	exit(0);
 }
