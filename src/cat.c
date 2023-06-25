@@ -1,0 +1,14 @@
+#include<stdio.h>
+FILE*f;i,d;main(c,v)char**v;{
+	if(c>1&&!strcmp(v[1],"-u"))v++,c--;
+	if(c==1)v[c++]="-";
+	for(;++i<c;){
+		f=strcmp(v[i],"-")?fopen(v[i],"r"):stdin;
+		if(!f)exit(1);
+		while((d=getc(f))>=0)
+			if(putc(d,stdout)<0)
+				exit(1);
+		if(fclose(f)<0)exit(1);
+	}
+	exit(0);
+}
