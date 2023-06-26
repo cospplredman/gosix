@@ -1,4 +1,4 @@
-#define X(a)for(;--e>p&*e a'/';*e=0);
+#define X(a)for(;--e>p&'/'a*e;*e=0);
 main(c,v)char**v;{
 	if(c>1&!strcmp(v[1],"--"))c--,v++;
 	if(c-2)exit(1);
