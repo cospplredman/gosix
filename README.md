@@ -1,6 +1,8 @@
 # gosix
 code in this repo is golfed c99 using only the c standard library **with no specific platform/target**
 
+environment variables will be hard coded on a per-utility basis
+
 utility sources are in the `src` directory, and testing scripts are in the `test` directory
 
 # Building
@@ -41,7 +43,7 @@ and some manual new lines after preprocessing directives.
 # TODO
 listed below is a (incomplete) list of posix utilities that you can write with the given restrictions that have yet to be implemented.
 
-## doable:
+### doable:
 - cksum
 - head
 - tail
@@ -51,7 +53,7 @@ listed below is a (incomplete) list of posix utilities that you can write with t
 - chrontab
 - cmp
 
-## technically doable:
+### technically doable:
 - comm
 - awk
 - vi
@@ -62,11 +64,14 @@ listed below is a (incomplete) list of posix utilities that you can write with t
 - sh
 - sed
 
-## mostly doable (some flags not supported):
+### mostly doable (some flags not supported):
 - rm (-r flag is impossible)
 - grep (-r flag is impossible)
 - cp (-r flag is impossible)
 - mv (-r flag and can't make/move directories)
+
+# Intent
+the intent here is to implement as many standalone, platform agnostic, single-file POSIX utilities as standard c99 and the c99 standard library allow (mostly for fun).
 
 # posix standard
 https://www.open-std.org/jtc1/sc22/open/n4217.pdf
@@ -74,3 +79,4 @@ https://www.open-std.org/jtc1/sc22/open/n4217.pdf
 https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html
 # utitlity defaults
 https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_04
+
