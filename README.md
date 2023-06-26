@@ -55,3 +55,5 @@ listed below is a (incomplete) list of posix utilities that you can write with t
 https://www.open-std.org/jtc1/sc22/open/n4217.pdf
 # list of all posix utilities
 https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html
+# utitlity defaults
+https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap01.html#tag_17_04
