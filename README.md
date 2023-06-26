@@ -36,8 +36,6 @@ listed below is a (incomplete) list of posix utilities that you can write with t
 
 ## technically doable:
 - comm
-- c99
-- fort77
 - awk
 - vi
 - printf
