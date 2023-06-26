@@ -21,6 +21,23 @@ to `clean` old builds run
 make clean
 ```
 
+# formatting
+this is a golf project, so any formatting goes as long as it is short.
+
+for in-progress source files newlines/tabs can be used to spread out code, but spaces should be used for necessary whitespace.
+
+i.e
+```
+return 1;
+//----^
+```
+
+this allows for an easy formatting fix with
+```
+sed s/[\t\n]//g
+```
+and some manual new lines after preprocessing directives.
+
 # TODO
 listed below is a (incomplete) list of posix utilities that you can write with the given restrictions that have yet to be implemented.
 
