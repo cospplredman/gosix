@@ -1,11 +1,13 @@
 #include<stdio.h>
 FILE*f;i,d;main(c,v)char**v;{
 	if(c>1&&!strcmp(v[1],"-u"))v++,c--;
+	if(setvbuf(stdout,NULL,_IONBF,1))exit(1);
 	if(c==1)v[c++]="-";
 	for(;++i<c;){
 		f=strcmp(v[i],"-")?fopen(v[i],"r"):stdin;
 		if(!f)exit(1);
 		rewind(f);
+		if(setvbuf(f,NULL,_IONBF,1))exit(1);
 		for(;(d=getc(f))>=0;)
 			if(putchar(d)<0)
 				exit(1);
