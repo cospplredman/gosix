@@ -1,0 +1,10 @@
+#!/bin/bash
+
+BIN=./bin/false
+TESTS=0
+SUCCESS=0
+
+TESTS=$((${TESTS} + 1))
+${BIN}||SUCCESS=$((${SUCCESS} + 1))
+
+echo $(basename $0)":" ${SUCCESS} "/" ${TESTS}
