@@ -44,7 +44,6 @@ and some manual new lines after preprocessing directives.
 listed below is a (incomplete) list of posix utilities that you can write with the given restrictions that have yet to be implemented.
 
 ### doable:
-- cksum
 - tail
 - cal
 - more
