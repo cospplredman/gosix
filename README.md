@@ -45,7 +45,6 @@ listed below is a (incomplete) list of posix utilities that you can write with t
 
 ### doable:
 - cksum
-- head
 - tail
 - cal
 - more
