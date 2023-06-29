@@ -10,7 +10,8 @@ FILE*f;n=24;l;d;i;main(c,v)char**v;{
 			if(putchar(d)<0)
 				exit(1);
 		if(fclose(f)<0)exit(1);
-		if(i+1<c)printf("\n==> %s <==\n",v[i+1]);
+		if(i+1<c&&printf("\n==> %s <==\n",v[i+1])<0)
+			exit(1);
 		l=0;
 	}
 }
