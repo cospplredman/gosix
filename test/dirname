@@ -19,6 +19,7 @@ eq $(${BIN} "") "/"
 eq $(${BIN} "//test/kekw") "//test"
 eq $(${BIN} "//test/kekw//") "//test"
 eq $(${BIN} "test/") "."
+eq $(${BIN} "a") "."
 
 echo $(basename $0)":" ${SUCCESS} "/" ${TESTS}
 
