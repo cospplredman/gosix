@@ -59,7 +59,6 @@ listed below is a (incomplete) list of posix utilities that you can write with t
 - diff
 - patch
 - lex
-- sh
 - sed
 
 ### mostly doable (some flags not supported):
