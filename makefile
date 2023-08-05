@@ -1,7 +1,7 @@
 
 CC ?= c99
 CFLAGS ?= -Os -w
-SRC := $(shell echo ./src/*)
+SRC := $(shell printf "%s " ./src/*)
 OBJ := $(SRC:./src/%.c=./bin/%) 
 
 default: all
